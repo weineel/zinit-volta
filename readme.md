@@ -14,10 +14,9 @@ When what's needed is an atclone'' hook to e.g. install a software (plus atpull'
 # run-atpull：Even if this repository has not been updated, atpull will still be executed during `zinit update weineel/zinit-volta`.
 
 zinit ice as"program" pick"volta" \
-    atclone"curl https://get.volta.sh | bash -s -- --skip-setup" \
-    atpull"%atclone" \
+    atclone"curl https://get.volta.sh | bash" \
+    atpull"curl https://get.volta.sh | bash -s -- --skip-setup" \
     run-atpull \
     atload'export VOLTA_HOME="$HOME/.volta" && export PATH="$VOLTA_HOME/bin:$PATH"'
 zinit light weineel/zinit-volta
-
 ```
