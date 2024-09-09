@@ -16,6 +16,6 @@ zinit ice as"program" pick"volta" \
     atclone"curl https://get.volta.sh | bash -s -- --skip-setup" \
     atpull"%atclone" \
     atload'export VOLTA_HOME="$HOME/.volta" && export PATH="$VOLTA_HOME/bin:$PATH"'
-zinit light zdharma-continuum/null
+zinit light weineel/zinit-volta
 
 ```
