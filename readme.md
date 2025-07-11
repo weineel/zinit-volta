@@ -1,4 +1,4 @@
-# null
+# zinit-volta
 
 **Note: zinit and zplugin are different names of the same thing**
 
