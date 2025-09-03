@@ -12,7 +12,7 @@ When what's needed is an atclone'' hook to e.g. install a software (plus atpull'
 # The invocation uses https://github.com/zdharma-continuum/null repo as a placeholder
 # for the atclone'' and atpull'' hooks
 # run-atpull：Even if this repository has not been updated, atpull will still be executed during `zinit update weineel/zinit-volta`.
-# atpull"%atclone" :如果安装和更新使用相同的命令的话
+# atpull"%atclone" :If the same command is used for installation and updating.
 
 # completion 文件（比如 _volta）只有放在 atclone 中生成才会被安装，更新后需要手动重新安装 `zinit creinstall weineel/zinit-volta`
 # !!! turbo 模式，可能会导致 starship 获取版本号等信息失败。
